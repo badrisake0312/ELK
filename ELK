@@ -1,0 +1,14 @@
+ELK-Elastic Search-Logstash-Kibana
+Java is dependency for this Applications.
+sudo apt-get install -y default-jdk
+Add the Elastic GPG Key & Repository
+Add the GPG key:
+
+
+wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+
+echo "deb https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-8.x.list
+
+sudo apt-get update
+
+sudo apt-get install -y elasticsearch
